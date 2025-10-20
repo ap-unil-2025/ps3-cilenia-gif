@@ -7,8 +7,9 @@ import random
 import string
 
 
-def generate_password(length=12, use_uppercase=True, use_lowercase=True,
-                     use_digits=True, use_special=True):
+def generate_password(
+    length=12, use_uppercase=True, use_lowercase=True, use_digits=True, use_special=True
+):
     """
     Generate a random password based on criteria.
 
@@ -41,7 +42,7 @@ def generate_password(length=12, use_uppercase=True, use_lowercase=True,
 
     # TODO: Shuffle the password list to randomize order
 
-    return ''.join(password)
+    return "".join(password)
 
 
 def password_strength(password):
